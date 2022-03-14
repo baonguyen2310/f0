@@ -1,0 +1,154 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*
+1. Vi tri
+2. Kich thuoc (width, height)
+3. Mau sac
+4. Kieu dang (kieu chu, hinh dang, ...)
+
+*/
+
+#main {
+    
+}
+
+#header {
+    height: 60px;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;  /* inline tren 1 line auto width theo word, 
+    co tinh chat block ke thua kich thuoc width
+    list-item giong block*/
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0px 24px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position:absolute;
+    top: 100%; /* chac chan children cua no nam duoi no*/
+    left: 0;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 8px 16px;
+    line-height: 36px;
+    min-width: 168px;
+}
+
+#nav .nav-arrow-down {
+
+}
+
+#header .search-btn {
+    float: right; /*Co float se khong ke thua width*/
+    line-height: 60px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon{
+    color:#fff;
+    font-size: 22px;
+    padding: 0px 24px;
+}
+
+
+#slider {
+    margin-top: 60px; /*Do header la fixed*/
+    padding-top: 50%; /*De height luon bang 50% cua width chinh no*/
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0px;
+    /* can giua */
+    left: 50%; /* vi tri*/
+    transform: translateX(-50%); /*kich thuoc width*/
+    text-align: center; /*can giua chu*/
+    padding: 32px 16px;
+    color: #fff;
+}
+
+#slider .text-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#slider .text-description {
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+
+#content {
+    height: 1000px;
+    background-color: #ccc;
+}
+
+#footer {
+
+}
