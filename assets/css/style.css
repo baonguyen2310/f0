@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.clear {
+    clear: both; /*gop cac div con dung float*/
+}
+
+.text-white {
+    color: #fff !important;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
@@ -16,6 +24,12 @@ html {
 3. Mau sac
 4. Kieu dang (kieu chu, hinh dang, ...)
 
+*/
+
+/*
+1. Ngoai vao trong
+2. Tren xuong duoi
+3. Tong quat den chi tiet
 */
 
 #main {
@@ -93,7 +107,7 @@ html {
 }
 
 #header .search-btn {
-    float: right; /*Co float se khong ke thua width*/
+    float: right; /*Co float se khong ke thua width, nen se nam tren 1 hang tuy vao width that*/
     line-height: 60px;
 }
 
@@ -145,8 +159,161 @@ html {
 
 
 #content {
-    height: 1000px;
+    line-height: 22.5px;
+}
+
+#content .content-section {
+    width: 800px;
+    /*can giua*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    margin: 15px 0px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+#content .about-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px 0px;
+}
+
+#content .member-list {
+
+}
+
+#content .member-item {
+    float: left; /* tan dung chieu rong con lai */
+    padding: 32px 0px;
+    text-align: center; /*vua can word vua can image*/
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin: 15px 0px;
+    font-family: 'Lato', sans-serif;
+    line-height: 22.5px;
+}
+
+#content .member-img {
+    border-radius: 4px;
+    width: 60%;
+    margin-bottom:16px;
+}
+
+
+.tour-section {
+    background-color:#000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    color: #757575;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 22.5px;
+    border: 1px rgb(204, 204, 204)  solid;
+    list-style-type: none;
+}
+
+.tickets-list li {
+    border-bottom: 1px rgb(221, 221, 221) solid;
+    padding: 8px 16px;
+}
+
+.tickets-list .sold-out{
+    background-color: rgb(244, 67, 54);
+    color: #fff;
+    margin-left: 16px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.tickets-list .quatity {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    float: right;
+    margin-right: 16px;
+    padding: 0 8px;
+}
+
+.places-list {
+    margin: 0 -16px;
+    padding: 32px 8px;
+}
+
+.places-list .place-item {
+    width: 33.33%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    float: left;
+    
+
+}
+
+.place-item .place-img {
+    width: 100%; /* do image khong tu co theo div */
+    display: block; /* do image mac dinh la inline, inline nam ke block tao ra 1 khoang thua */
+}
+
+.place-item .place-img:hover {
+    opacity: 0.6;
+}
+
+
+.place-item .place-body {
+    padding: 0.15px 16px 24px 16px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+.place-item .place-heading {
+    margin: 15px 0;
+}
+
+.place-item .place-time {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.place-item .place-desc {
+    margin: 15px 0;
+}
+
+.place-item .place-buy-btn {
+    font-weight: 400;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.place-item .place-buy-btn:hover {
     background-color: #ccc;
+    color: #000;
 }
 
 #footer {
