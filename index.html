@@ -89,8 +89,8 @@
 						</ul>
 
 						<!-- Places -->
-						<div class="places-list">
-							<div class="place-item">
+						<div class="row places-list">
+							<div class="col col-third place-item">
 								<img src="./assets/img/place/newyork.jpg" alt="New York" class="place-img">
 								<div class="place-body">
 									<h3 class="place-heading">New York</h3>
@@ -99,7 +99,7 @@
 									<a href="#" class="place-buy-btn">Buy Tickets</a>
 								</div>
 							</div>
-							<div class="place-item">
+							<div class="col col-third place-item">
 								<img src="./assets/img/place/paris.jpg" alt="Paris" class="place-img">
 								<div class="place-body">
 									<h3 class="place-heading">Paris</h3>
@@ -108,7 +108,7 @@
 									<a href="#" class="place-buy-btn">Buy Tickets</a>
 								</div>
 							</div>
-							<div class="place-item">
+							<div class="col col-third place-item">
 								<img src="./assets/img/place/sanfran.jpg" alt="San Fransisco" class="place-img">
 								<div class="place-body">
 									<h3 class="place-heading">San Fransisco</h3>
@@ -126,15 +126,51 @@
 				<div class="content-section">
 					<h2 class="section-heading">CONTACT</h2>
 					<p class="section-sub-heading">Fan? Drop a note!</p>
-					
+					<div class="row contact-list">
+						<div class="col col-half contact-detail">
+							<p><i class="ti-location-pin">Chicago, US</i></p>
+							<p><i class="ti-mobile">Phone: +00 151515</i></p>
+							<p><i class="ti-email">Email: mail@mail.com</i></p>							
+						</div>
+						<div class="col col-half">
+							<form action="">
+								<div class="row">
+									<div class="col col-half contact-name">
+										<input type="text" class="form-control" placeholder="Name" required>
+									</div>
+									<div class="col col-half contact-email">
+										<input type="email" class="form-control" placeholder="Email" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col-full contact-message">
+										<input type="text" class="form-control" placeholder="Message" required>
+									</div>
+								</div>
+								<input type="submit" value="SEND" class="submit-btn">
+							</form>
+						</div>
+					</div>
 
 				</div>
 
+				<!-- Map section-->
+				<div class="map-section">
+					<img src="./assets/img/map/map.jpg" alt="Map" class="map-img">
+				</div>
 				
 			</div>
 
 			<div id="footer">
-
+				<div class="socials-list">
+					<a href=""><i class="ti-facebook"></i></a>
+					<a href=""><i class="ti-instagram"></i></a>
+					<a href=""><i class="ti-linkedin"></i></a>
+					<a href=""><i class="ti-youtube"></i></a>
+					<a href=""><i class="ti-twitter"></i></a>
+					<a href=""><i class="ti-pinterest"></i></a>
+				</div>
+				<p class="copyright">Powered by <a href="w3.css">w3.css</a></p>
 			</div>
 		</div>
 	</body>

@@ -22,3 +22,5 @@ Xem Styles, chon :hov: tai hien hanh vi
 themify icon
 
 chon alt phim arrow: di chuyen code duoc chon
+
+alt shift xuong: copy

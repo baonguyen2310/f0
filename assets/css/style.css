@@ -9,8 +9,47 @@
     clear: both; /*gop cac div con dung float*/
 }
 
+/*thay cho clear*/
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .text-white {
     color: #fff !important;
+}
+
+.row {
+    margin-left: -16px; /* Bu tru cho padding */
+    margin-right: -16px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.form-control {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 22.5px;
+    width: 100%; /*tinh chat block, ke thua kich thuoc parent*/
 }
 
 html {
@@ -256,17 +295,12 @@ html {
 }
 
 .places-list {
-    margin: 0 -16px;
+    /*margin: 0 -16px;*/
     padding: 32px 8px;
 }
 
 .places-list .place-item {
-    width: 33.33%;
     margin-bottom: 16px;
-    padding: 0 8px;
-    float: left;
-    
-
 }
 
 .place-item .place-img {
@@ -316,6 +350,82 @@ html {
     color: #000;
 }
 
-#footer {
-
+/* Contact */
+.contact-list {
+    padding: 32px 0;
 }
+
+.contact-detail {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 22.5px;
+}
+
+.contact-detail i[class*="ti-"] {
+    width: 30px;
+    line-height: 18px;
+}
+
+.contact-list .contact-name{
+    margin-bottom: 8px;
+}
+
+.contact-list .contact-email{
+    margin-bottom: 8px;
+}
+
+.contact-list .contact-message{
+    
+}
+
+.contact-list .submit-btn {
+    margin: 16px 0;
+    padding: 8px 16px;
+    float: right;
+    background-color: #000;
+    color:#fff;
+    border: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+.contact-list .submit-btn:hover {
+    background-color: #ccc;
+    color:#000;
+    cursor: pointer;
+}
+
+.map-img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    font-family: 'Lato', sans-serif;
+    
+    text-align: center;
+    line-height: 36px;
+    opacity: 0.6;
+    display: block;
+    background-color: rgb(241, 241, 241);
+    
+}
+
+.socials-list a {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 15px;
+    line-height: 22.5px;
+    margin: 15px 0;
+}
+
+.copyright a {
+    color: #000;
+}
+
