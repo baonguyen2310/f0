@@ -1,0 +1,54 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    #nav > li {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #nav {
+        display: block; /*bam duoc theo chieu ngang*/
+    }
+
+    #content .member-item {
+        float: none;
+    }
+
+    .places-list .place-item {
+        width: 100%;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
+
+    .contact-detail {
+        margin-bottom: 16px;
+    }
+
+    .place-item .place-buy-btn {
+        width: 100%;
+        display: block;
+    }
+
+    .place-item .place-body {
+        padding-bottom: 0.15px;
+    }
+
+}

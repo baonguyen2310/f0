@@ -72,7 +72,7 @@ html {
 */
 
 #main {
-    
+    overflow: hidden; /*responsive an con ra ngoai cha*/
 }
 
 #header {
@@ -83,6 +83,7 @@ html {
     left: 0px;
     right: 0px;
     z-index: 1;
+    overflow: hidden; /* an nhung con ra ngoai cha */
 }
 
 #nav {
@@ -145,9 +146,25 @@ html {
 
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right; /*Co float se khong ke thua width, nen se nam tren 1 hang tuy vao width that*/
     line-height: 60px;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
 }
 
 #header .search-btn:hover {
@@ -155,6 +172,7 @@ html {
     cursor: pointer;
 }
 
+#header .menu-icon,
 #header .search-icon{
     color:#fff;
     font-size: 22px;
@@ -203,6 +221,7 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%; /*responsive*/
     /*can giua*/
     margin-left: auto;
     margin-right: auto;
@@ -235,12 +254,12 @@ html {
 }
 
 #content .member-list {
-
+    padding-top: 32px;
 }
 
 #content .member-item {
     float: left; /* tan dung chieu rong con lai */
-    padding: 32px 0px;
+
     text-align: center; /*vua can word vua can image*/
 }
 
@@ -343,6 +362,7 @@ html {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
 }
 
 .place-item .place-buy-btn:hover {
@@ -353,6 +373,8 @@ html {
 /* Contact */
 .contact-list {
     padding: 32px 0;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .contact-detail {
@@ -379,7 +401,7 @@ html {
 }
 
 .contact-list .submit-btn {
-    margin: 16px 0;
+    margin: 16px -8px;
     padding: 8px 16px;
     float: right;
     background-color: #000;
@@ -429,3 +451,8 @@ html {
     color: #000;
 }
 
+/*
+    PC >= 1024px
+    Tablet: >= 740px & < 1024px
+    Mobile: < 740px
+*/
